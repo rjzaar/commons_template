@@ -9,7 +9,8 @@
         "goalgorilla/open_social": "~12.4.13",
         "php": "^8.0",
         "monolog/monolog": "^2.3.5",
-        "rjzaar/workflow_assignment": "dev-main"
+        "rjzaar/workflow_assignment": "dev-main",
+        "drupal/ultimate_cron": "^2.0@beta"
     },
     "repositories": [
         {
@@ -29,10 +30,7 @@
         "patches": {
             "goalgorilla/open_social": {
                 "Fix PHP 8.2 deprecated ${var} string interpolation": "https://www.drupal.org/files/issues/2024-02-07/strings-is-deprecated-3419719-2.patch"
-            },
-            "drupal/ultimate_cron": {
-    		"Fix Drush 12 compatibility - logger() method": "patches/ultimate_cron_drush12.patch"
-	}
+            }
         },
         "drupal-scaffold": {
             "locations": {
@@ -81,5 +79,8 @@
             "oomphinc/composer-installers-extender": true,
             "zaporylie/composer-drupal-optimizations": true
         }
+    },
+    "require-dev": {
+        "drush/drush": "^13.6"
     }
 }
