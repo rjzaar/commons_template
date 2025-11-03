@@ -26,6 +26,11 @@
         }
     ],
     "extra": {
+        "patches": {
+            "goalgorilla/open_social": {
+                "Fix PHP 8.2 deprecated ${var} string interpolation": "https://www.drupal.org/files/issues/2024-02-07/strings-is-deprecated-3419719-2.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "html/"
