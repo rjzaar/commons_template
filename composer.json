@@ -10,7 +10,7 @@
         "php": "^8.0",
         "monolog/monolog": "^2.3.5",
         "rjzaar/workflow_assignment": "dev-main",
-        "drupal/ultimate_cron": "^2.0@beta"
+        "drupal/ultimate_cron": "^2.0.0-alpha7"
     },
     "repositories": [
         {
